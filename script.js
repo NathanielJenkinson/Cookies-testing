@@ -8,13 +8,19 @@ document.addEventListener("DOMContentLoaded", function () {
     let consentGiven = false;
 
     for (let cookie of cookies) {
-        if (cookie.trim().startsWith("poseidonCookieConsent=true")) {
+        if (cookie.trim().startsWith("poseidonCookieConsent=true")) { //check if cookies are accepted
             consentGiven = true;
             break;
         }
     }
 
     if (consentGiven) {
-        document.getElementById("cookie-banner").style.display = "none";
+        document.getElementById("cookie-banner").style.display = "none"; // if cookies are accepted banner is not shown
     }
 });
+function rejectCookies() {
+
+    // Hide the banner immediately
+    document.getElementById("cookie-banner").style.display = "none";
+}
+
