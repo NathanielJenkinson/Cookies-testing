@@ -94,3 +94,50 @@ footer {
     background-color: #06131d;
     font-size: 14px;
 }
+#cookie-banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to top, #041018, #0b1d2a);
+    color: #e0f2ff;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(224, 242, 255, 0.15);
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+}
+
+.cookie-text {
+    max-width: 70%;
+}
+
+.cookie-text strong {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+    color: #7fc8ff;
+}
+
+.cookie-text p {
+    font-size: 14px;
+    line-height: 1.4;
+    opacity: 0.9;
+}
+#cookie-banner button {
+    padding: 10px 22px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1e90ff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+#cookie-banner button:hover {
+    background-color: #1873cc;
+    transform: translateY(-1px);
+}
+
